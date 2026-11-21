@@ -84,7 +84,7 @@ export const projects = [
     mark: '57',
     category: 'work',
     pattern: 'dots',
-    stack: ['TypeScript', 'Python', 'PostgreSQL', 'Docker', 'IA'],
+    stack: ['Next.js', 'Python', 'TypeScript', 'HTML', 'CSS'],
     es: {
       summary: 'Aplicación principal de la empresa: plataforma de inteligencia política y regulatoria con IA.',
       detail:
@@ -105,7 +105,7 @@ export const projects = [
     mark: 'CRM',
     category: 'work',
     pattern: 'grid',
-    stack: ['TypeScript', 'Python', 'PostgreSQL', 'Docker'],
+    stack: ['Next.js', 'TypeScript', 'Python', 'HTML', 'CSS'],
     es: {
       summary: 'Herramientas internas tipo CRM para gestionar clientes y procesos del equipo.',
       detail:
@@ -126,7 +126,7 @@ export const projects = [
     mark: 'AV',
     category: 'work',
     pattern: 'lines',
-    stack: ['Python', 'TypeScript', 'Docker'],
+    stack: ['Python', 'Next.js', 'TypeScript', 'HTML', 'CSS'],
     es: {
       summary: 'Aplicaciones internas para editar y producir contenido audiovisual.',
       detail:

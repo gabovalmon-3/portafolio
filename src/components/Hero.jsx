@@ -3,7 +3,7 @@ import { useTypewriter } from '../hooks/hooks.js';
 import { profile } from '../data/profile.js';
 import { ArrowRightIcon } from './Icons.jsx';
 
-const TECH = ['React', 'Flutter', 'Angular', 'Spring Boot', '.NET', 'Python', 'Docker', 'TypeScript', 'PostgreSQL', 'Next.js'];
+const TECH = ['Next.js', 'Python', 'TypeScript', 'React', 'Docker', 'Flutter', 'Angular', 'Spring Boot', '.NET', 'PostgreSQL'];
 
 export default function Hero() {
   const { t } = useLanguage();
