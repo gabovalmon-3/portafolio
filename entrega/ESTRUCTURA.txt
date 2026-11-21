@@ -1,0 +1,74 @@
+PORTAFOLIO PROFESIONAL - GABRIEL VALVERDE
+BISOFT-23 Portafolio Profesional - Universidad CENFOTEC - C3-2026
+Tecnologias: React 18 + Vite 5 + CSS (sin framework CSS)
+
+ESTRUCTURA DE ARCHIVOS
+======================
+
+portafolio/
+|-- index.html                  Plantilla HTML (lang, metadatos, fuentes)
+|-- package.json                Dependencias y comandos (dev, build, preview)
+|-- vite.config.js              Configuracion de Vite (salida en /docs para GitHub Pages)
+|-- README.md                   Como ejecutar y publicar el proyecto
+|
+|-- public/
+|   |-- favicon.svg             Logo personal (capas que forman una V)
+|   |-- gabriel.jpg             Fotografia personal (seccion Sobre mi)
+|   `-- .nojekyll               Evita el procesamiento Jekyll en GitHub Pages
+|
+|-- src/
+|   |-- main.jsx                Punto de entrada de React
+|   |-- App.jsx                 Estructura semantica: header, main (6 section), footer
+|   |
+|   |-- components/
+|   |   |-- Header.jsx          <header> + <nav> con saltos a las secciones y menu movil
+|   |   |-- LanguageSwitch.jsx  Componente Switch espanol / ingles
+|   |   |-- Hero.jsx            Seccion Inicio (presentacion y ficha tecnica)
+|   |   |-- About.jsx           Seccion 1: Sobre mi
+|   |   |-- Skills.jsx          Seccion 2: Habilidades (pestanas interactivas)
+|   |   |-- Projects.jsx        Seccion 3: Galeria de trabajos (filtros + ventana modal)
+|   |   |-- Journey.jsx         Seccion 4: Trayectoria (acordeon)
+|   |   |-- Contact.jsx         Seccion 5: Contacto (formulario validado, envio a correo)
+|   |   |-- Footer.jsx          <footer> con logo y redes
+|   |   |-- Floating.jsx        Boton scrolltop y chat de WhatsApp
+|   |   |-- Reveal.jsx          Animacion de aparicion al hacer scroll
+|   |   `-- Icons.jsx           Logo e iconos SVG
+|   |
+|   |-- data/
+|   |   |-- profile.js          Datos personales: correo, WhatsApp, GitHub, LinkedIn
+|   |   `-- projects.js         Proyectos de la galeria (espanol e ingles)
+|   |
+|   |-- i18n/
+|   |   |-- translations.js     Textos de la interfaz en espanol e ingles
+|   |   `-- LanguageContext.jsx Contexto de idioma (guarda la preferencia)
+|   |
+|   |-- hooks/
+|   |   `-- hooks.js            Scroll spy, aparicion, maquina de escribir
+|   |
+|   `-- styles/
+|       `-- styles.css          Estilos, regla 60-30-10, animaciones y responsividad
+|
+|-- docs/                       Sitio compilado que publica GitHub Pages
+|   |-- index.html
+|   |-- favicon.svg
+|   `-- assets/                 CSS y JavaScript generados
+|
+`-- entrega/
+    |-- ESTRUCTURA.txt          Este archivo
+    |-- ENLACES.txt             Enlaces: GitHub Pages, GitHub, LinkedIn y video
+    `-- responsividad.jpg       Captura que demuestra la responsividad
+
+REGLA 60-30-10 (sin color blanco)
+=================================
+60 %  Niebla    #E1EBE6   Fondo general de la pagina
+30 %  Petroleo  #123A40   Encabezado, pie, secciones oscuras y texto
+10 %  Mango     #F29F3D   Botones, acentos y estados activos
+
+SECCIONES (navegacion one-page por saltos)
+==========================================
+Inicio (#inicio) + 5 secciones de contenido:
+1. Sobre mi      #sobre-mi
+2. Habilidades   #habilidades
+3. Proyectos     #proyectos
+4. Trayectoria   #trayectoria
+5. Contacto      #contacto
