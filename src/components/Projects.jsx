@@ -53,6 +53,8 @@ export default function Projects() {
   const dialog = useRef(null);
 
   const visible = projects.filter((project) => filter === 'all' || project.category === filter);
+  const featured = visible.filter((project) => project.images?.length);
+  const compact = visible.filter((project) => !project.images?.length);
   const titleOf = (project) => (lang === 'en' && project.titleEn) || project.title;
 
   // Abre o cierra la ventana modal nativa <dialog>.
@@ -90,8 +92,9 @@ export default function Projects() {
           </div>
         </Reveal>
 
+        {/* Proyectos destacados: tarjetas grandes con captura real */}
         <ul className="gallery">
-          {visible.map((project, index) => (
+          {featured.map((project, index) => (
             <li className="gallery__item" key={`${filter}-${project.id}`} style={{ '--i': index }}>
               <article className="card">
                 <Cover project={project} />
@@ -110,6 +113,28 @@ export default function Projects() {
             </li>
           ))}
         </ul>
+
+        {/* El resto: filas compactas para que la sección no se alargue */}
+        {compact.length > 0 && (
+          <ul className={`stack ${featured.length ? 'stack--after' : ''}`}>
+            {compact.map((project, index) => (
+              <li className="stack__item" key={`${filter}-${project.id}`} style={{ '--i': index }}>
+                <button type="button" className="row" onClick={() => setSelected(project)}>
+                  <span className={`row__mark cover--${project.pattern}`} aria-hidden="true">
+                    {project.mark}
+                  </span>
+                  <span className="row__text">
+                    <span className="row__title">{titleOf(project)}</span>
+                    <span className="row__meta">
+                      {t.projects.filters[project.category]} · {project.stack.slice(0, 2).join(' · ')}
+                    </span>
+                  </span>
+                  <ArrowRightIcon className="row__arrow" />
+                </button>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
 
       <dialog

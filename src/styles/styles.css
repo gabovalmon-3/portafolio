@@ -1865,3 +1865,94 @@ svg {
 .modal:has(.shots) {
   width: min(820px, calc(100% - 2rem));
 }
+
+/* ── Galería: filas compactas para los proyectos sin captura ─ */
+.stack {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+  gap: 0.75rem;
+}
+
+.stack--after {
+  margin-top: 1.5rem;
+}
+
+.stack__item {
+  animation: rise 0.5s var(--ease) both;
+  animation-delay: calc(var(--i) * 45ms);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  width: 100%;
+  padding: 0.6rem 0.9rem 0.6rem 0.6rem;
+  background: var(--c60-shade);
+  border: 2px solid transparent;
+  border-radius: var(--radius-sm);
+  text-align: left;
+  transition:
+    transform 0.3s var(--ease),
+    border-color 0.25s,
+    box-shadow 0.3s var(--ease);
+}
+
+.row:hover,
+.row:focus-visible {
+  transform: translateX(6px);
+  border-color: var(--c30);
+  box-shadow: var(--shadow);
+}
+
+.row__mark {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 56px;
+  height: 56px;
+  background-color: var(--c30);
+  border-radius: 6px;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.66rem;
+  letter-spacing: -0.02em;
+  color: var(--on-dark);
+  overflow: hidden;
+}
+
+.row__text {
+  display: grid;
+  flex: 1;
+  min-width: 0;
+}
+
+.row__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.02rem;
+  line-height: 1.25;
+}
+
+.row__meta {
+  overflow: hidden;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.03em;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--ink-soft);
+}
+
+.row__arrow {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  color: var(--c10-deep);
+  transition: transform 0.25s var(--ease);
+}
+
+.row:hover .row__arrow {
+  transform: translateX(4px);
+}
