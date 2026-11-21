@@ -14,6 +14,7 @@ portafolio/
 |-- public/
 |   |-- favicon.svg             Logo personal (capas que forman una V)
 |   |-- gabriel.jpg             Fotografia personal (seccion Sobre mi)
+|   |-- proyectos/              Capturas reales de LIVO, Brakket y Garage Toolbox
 |   `-- .nojekyll               Evita el procesamiento Jekyll en GitHub Pages
 |
 |-- src/
@@ -51,6 +52,8 @@ portafolio/
 |-- docs/                       Sitio compilado que publica GitHub Pages
 |   |-- index.html
 |   |-- favicon.svg
+|   |-- gabriel.jpg
+|   |-- proyectos/
 |   `-- assets/                 CSS y JavaScript generados
 |
 `-- entrega/

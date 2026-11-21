@@ -2,10 +2,10 @@ PORTAFOLIO PROFESIONAL - GABRIEL VALVERDE
 BISOFT-23 Portafolio Profesional - Universidad CENFOTEC - C3-2026
 
 Portafolio web (GitHub Pages):
-PENDIENTE
+https://gabovalmon-3.github.io/portafolio/
 
 Repositorio del portafolio:
-PENDIENTE
+https://github.com/gabovalmon-3/portafolio
 
 GitHub:
 https://github.com/gabovalmon-3
