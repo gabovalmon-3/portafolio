@@ -3,7 +3,6 @@ BISOFT-23 Portafolio Profesional - Universidad CENFOTEC - C3-2026
 Tecnologias: React 18 + Vite 5 + CSS (sin framework CSS)
 
 ESTRUCTURA DE ARCHIVOS
-======================
 
 portafolio/
 |-- index.html                  Plantilla HTML (lang, metadatos, fuentes)
@@ -30,7 +29,7 @@ portafolio/
 |   |   |-- Projects.jsx        Seccion 3: Galeria de trabajos (filtros + ventana modal)
 |   |   |-- Journey.jsx         Seccion 4: Trayectoria (acordeon)
 |   |   |-- Contact.jsx         Seccion 5: Contacto (formulario validado, envio a correo)
-|   |   |-- Footer.jsx          <footer> con logo y redes
+|   |   |-- Footer.jsx          <footer> con logo, barra 60-30-10 y redes
 |   |   |-- Floating.jsx        Boton scrolltop y chat de WhatsApp
 |   |   |-- Reveal.jsx          Animacion de aparicion al hacer scroll
 |   |   `-- Icons.jsx           Logo e iconos SVG
@@ -61,14 +60,12 @@ portafolio/
     |-- ENLACES.txt             Enlaces: GitHub Pages, GitHub, LinkedIn y video
     `-- responsividad.jpg       Captura que demuestra la responsividad
 
-REGLA 60-30-10 (sin color blanco)
-=================================
+REGLA 60-30-10
 60 %  Niebla    #E1EBE6   Fondo general de la pagina
 30 %  Petroleo  #123A40   Encabezado, pie, secciones oscuras y texto
 10 %  Mango     #F29F3D   Botones, acentos y estados activos
 
 SECCIONES (navegacion one-page por saltos)
-==========================================
 Inicio (#inicio) + 5 secciones de contenido:
 1. Sobre mi      #sobre-mi
 2. Habilidades   #habilidades

@@ -13,6 +13,15 @@ export default function Footer() {
           <span className="brand__name">{profile.name}</span>
         </a>
 
+        <div className="palette" role="img" aria-label={t.footer.palette}>
+          <span className="palette__label">{t.footer.palette}</span>
+          <span className="palette__bar">
+            <span className="palette__c60">60%</span>
+            <span className="palette__c30">30%</span>
+            <span className="palette__c10">10%</span>
+          </span>
+        </div>
+
         <ul className="footer__social" aria-label={t.footer.social}>
           <li>
             <a href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub">

@@ -1956,3 +1956,51 @@ svg {
 .row:hover .row__arrow {
   transform: translateX(4px);
 }
+
+/* Barra de la regla 60-30-10 en el pie */
+.palette {
+  display: grid;
+  gap: 0.45rem;
+  justify-items: center;
+}
+
+.palette__label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--on-dark-soft);
+}
+
+.palette__bar {
+  display: flex;
+  width: min(300px, 70vw);
+  height: 26px;
+  border: 1px solid var(--c30-soft);
+  border-radius: 999px;
+  overflow: hidden;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+}
+
+.palette__c60 {
+  flex: 60;
+  background: var(--c60);
+  color: var(--ink);
+}
+
+.palette__c30 {
+  flex: 30;
+  background: var(--c30);
+  color: var(--on-dark);
+}
+
+.palette__c10 {
+  flex: 10;
+  min-width: 38px;
+  background: var(--c10);
+  color: var(--ink);
+}

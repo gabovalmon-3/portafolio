@@ -177,6 +177,7 @@ export const translations = {
     footer: {
       rights: 'Todos los derechos reservados.',
       built: 'Hecho con React y CSS.',
+      palette: 'Regla 60 · 30 · 10',
       social: 'Redes',
     },
   },
@@ -358,6 +359,7 @@ export const translations = {
     footer: {
       rights: 'All rights reserved.',
       built: 'Built with React and CSS.',
+      palette: '60 · 30 · 10 rule',
       social: 'Social',
     },
   },
